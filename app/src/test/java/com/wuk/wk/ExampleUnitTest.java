@@ -1,4 +1,4 @@
-package com.wuk.wksummary;
+package com.wuk.wk;
 
 import org.junit.Test;
 

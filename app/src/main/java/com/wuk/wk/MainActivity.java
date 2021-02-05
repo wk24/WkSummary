@@ -1,8 +1,10 @@
-package com.wuk.wksummary;
+package com.wuk.wk;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.wuk.wk.R;
 
 public class MainActivity extends AppCompatActivity {
 

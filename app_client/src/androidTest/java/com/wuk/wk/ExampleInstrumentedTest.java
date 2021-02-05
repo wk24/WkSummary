@@ -1,4 +1,4 @@
-package com.wuk.wksummary;
+package com.wuk.wk;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.wuk.wksummary", appContext.getPackageName());
+        assertEquals("com.wuk.server", appContext.getPackageName());
     }
 }
