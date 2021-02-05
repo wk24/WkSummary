@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WkSummary">
-        <activity android:name="com.wuk.wk.MainActivity">
+        <activity android:name="com.wuk.wkdemo.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

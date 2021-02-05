@@ -1,4 +1,4 @@
-package com.wuk.wk;
+package com.wuk.wkdemo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,6 +12,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.wuk.wk.IMyAidlInte;
+import com.wuk.wk.R;
 
 public class MainActivity extends AppCompatActivity {
     public static final String TAG = "MainActivity";

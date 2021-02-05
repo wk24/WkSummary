@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.wuk.server"
+        applicationId "com.wuk.wkdemo"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
