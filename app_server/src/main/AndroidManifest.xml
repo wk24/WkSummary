@@ -9,19 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WkSummary">
-        <activity android:name="com.wuk.wk.MainActivity">
+        <activity android:name=".MainActivity4">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
 
-        <service android:name="com.wuk.wk.IRemoteService"
-            android:process=":remote"
-            android:exported="true">
+        </activity>
+        <activity android:name=".MainActivity3">
+
+        </activity>
+        <activity
+            android:name=".MainActivity2"
+            android:process=":wprocess" />
+        <activity android:name=".MainActivity"></activity>
+
+        <service
+            android:name=".IRemoteService"
+            android:exported="true"
+            android:process=":remote">
             <intent-filter>
-                <action android:name="com.wuk.wk.IRemoteService"/>
+                <action android:name="com.wuk.wk.IRemoteService" />
             </intent-filter>
         </service>
     </application>

@@ -2,6 +2,7 @@ package com.wuk.wkdemo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.animation.ObjectAnimator;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -11,6 +12,7 @@ import android.os.IBinder;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.wuk.wk.IMyAidlInte;
@@ -50,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         nub_2 = findViewById(R.id.nub_2);
         tv_send = findViewById(R.id.tv_send);
         tv_bind = findViewById(R.id.tv_bind);
+        ProgressBar pbProgress = findViewById(R.id.pb_progress);
 
         tv_send.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,6 +77,8 @@ public class MainActivity extends AppCompatActivity {
                 Log.e(TAG,"bindService"+iImoocAIDLService);
             }
         });
+
+        ObjectAnimator.ofFloat(pbProgress, "alpha", 0f, 1f,0f,1f,0f,1f).setDuration(8000).start();
     }
 
     private void bindService() {
